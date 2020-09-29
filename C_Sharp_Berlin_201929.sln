@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{92EB18FC-63F6-46DA-A249-29A54C27D9AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul01_HelloWorld", "HelloWorld\Modul01_HelloWorld.csproj", "{92EB18FC-63F6-46DA-A249-29A54C27D9AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniRechner", "MiniRechner\MiniRechner.csproj", "{3298FDE7-94EF-4301-B5DA-A65907BAFFB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab01_MiniRechner", "MiniRechner\Lab01_MiniRechner.csproj", "{3298FDE7-94EF-4301-B5DA-A65907BAFFB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02.1_Kontrollstrukturen", "Kontrollstruckturen\Modul02.1_Kontrollstrukturen.csproj", "{43A7B661-5377-40E8-8255-58BA1F3A19E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02.2_Zufallszahlenraten", "Zufallszahlenraten\Modul02.2_Zufallszahlenraten.csproj", "{D08C1F78-BFF6-4C0A-8BF3-577C53E9FB7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_Lotto", "Lotto\Lab02_Lotto.csproj", "{1D76A08D-CA41-484B-A345-1AE8BE430F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{3298FDE7-94EF-4301-B5DA-A65907BAFFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3298FDE7-94EF-4301-B5DA-A65907BAFFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3298FDE7-94EF-4301-B5DA-A65907BAFFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A7B661-5377-40E8-8255-58BA1F3A19E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A7B661-5377-40E8-8255-58BA1F3A19E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A7B661-5377-40E8-8255-58BA1F3A19E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A7B661-5377-40E8-8255-58BA1F3A19E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08C1F78-BFF6-4C0A-8BF3-577C53E9FB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08C1F78-BFF6-4C0A-8BF3-577C53E9FB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08C1F78-BFF6-4C0A-8BF3-577C53E9FB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08C1F78-BFF6-4C0A-8BF3-577C53E9FB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D76A08D-CA41-484B-A345-1AE8BE430F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D76A08D-CA41-484B-A345-1AE8BE430F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D76A08D-CA41-484B-A345-1AE8BE430F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D76A08D-CA41-484B-A345-1AE8BE430F69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

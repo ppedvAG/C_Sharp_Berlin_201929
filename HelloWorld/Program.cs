@@ -71,6 +71,7 @@ Zeilenumbruch";
             //Eingabe eines Strings, Umwandlung in einen Integer (Parse()-Funktion) und Abspeichern in einer Integer-Variablen
             Console.WriteLine("Bitte gib eine Zahl ein:");
             string eingegebeneZahl = Console.ReadLine();
+
             int umgewandelteZahl = int.Parse(eingegebeneZahl);
             int summe = umgewandelteZahl + umgewandelteZahl;
             //Ausgabe
