@@ -50,26 +50,46 @@ namespace TesteFahrzeugpark
 
             #endregion
 
-            PKW pkw1 = new PKW("BMW", 220, 29000, 5);
+            #region Modul05: Vererbung
+            //PKW pkw1 = new PKW("BMW", 220, 29000, 5);
 
+            //Console.WriteLine(pkw1.BeschreibeMich());
+
+            //pkw1.Hupen();
+
+            //Console.WriteLine(pkw1);
+
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+            //pkw1 = new PKW("BMW", 220, 29000, 5);
+
+            //Console.WriteLine("Anzahl der erstellten Fahrzeuge: " + Fahrzeug.AnzahlFahrzeuge); 
+            #endregion
+
+            #region Lab05: PKW-, Schiff- und Flugzeug-Klasse
+
+            PKW pkw1 = new PKW("BMW", 250, 23000, 5);
             Console.WriteLine(pkw1.BeschreibeMich());
-
             pkw1.Hupen();
 
-            Console.WriteLine(pkw1);
+            Schiff schiff1 = new Schiff("Titanic", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf);
+            Console.WriteLine(schiff1.BeschreibeMich());
+            schiff1.Hupen();
 
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
-            pkw1 = new PKW("BMW", 220, 29000, 5);
+            Flugzeug flugzeug1 = new Flugzeug("Boing", 750, 3000000, 9990);
+            Console.WriteLine(flugzeug1.BeschreibeMich());
+            flugzeug1.Hupen();
 
-            Console.WriteLine("Anzahl der erstellten Fahrzeuge: " + Fahrzeug.AnzahlFahrzeuge);
+            Console.WriteLine(Fahrzeug.ZeigeAnzahlFahrzeuge());
+
+            #endregion
         }
     }
 }

@@ -5,7 +5,15 @@ namespace Fahrzeugpark
     //KLASSEN sind Vorlagen für OOP-Objekte. Hier wird das Aussehen, das Verhalten und der Startzustand für Objekte dieses Typs definiert.
     public abstract class Fahrzeug
     {
+        #region Statische Member
+        //Als STATIC markierte Variablen und Methoden hängen an der Klasse selbst und nicht an instanziierten Objekten.
         public static int AnzahlFahrzeuge { get; set; } = 0;
+
+        public static string ZeigeAnzahlFahrzeuge()
+        {
+            return "Es wurden " + AnzahlFahrzeuge + " Fahrzeuge produziert.";
+        }
+        #endregion
 
         #region Felder und Eigenschaften
         //FELDER (Membervariablen) sind die Variablen einzelner Objekte, welche die Zustände dieser Objekte definieren
@@ -89,6 +97,7 @@ namespace Fahrzeugpark
             this.AktGeschwindigkeit = 0;
         }
 
+        //Eine als VIRTUAL gesetzte Methode erlaubt den Kindklassen diese per OVERRIDE zu überschreiben
         public virtual string BeschreibeMich()
         {
             if (this.MotorLäuft)
@@ -97,17 +106,21 @@ namespace Fahrzeugpark
                 return $"{this.Name} kostet {this.Preis}€ und könnte maximal {this.MaxGeschwindigkeit}km/h fahren.";
         }
 
+        //Eine als ABSTRACT gesetzte Methode (nur in abstrakten Klassen möglich) beseht nur aus einem Methodenkopf und zwingt erbende
+        //Klassen diese Methode zu implementieren
         public abstract void Hupen();
 
+        //Die ToString()-Methode wird von der object-Klasse an alle anderen Klassen vererbt. Sie wird immer dann aufgerufen, wenn ein Objekt als
+        //String dargestellt werden soll
         public override string ToString()
         {
             return this.BeschreibeMich();
         }
 
-        public override bool Equals(object obj)
-        {
-            return this.Name.Equals(((PKW)obj).Name);
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return this.Name.Equals(((PKW)obj).Name);
+        //}
         #endregion
     }
 }
