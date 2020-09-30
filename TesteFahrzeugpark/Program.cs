@@ -32,24 +32,44 @@ namespace TesteFahrzeugpark
 
             #region Lab04: Fahrzeug_Klasse
 
-            //Deklaration einer Fahrzeug-Variablen und Initialisierung mittels einer Fahrzeug-Instanz
-            Fahrzeug fz1 = new Fahrzeug("Mercedes", 190, 23000);
-            //Ausführen der BeschreibeMich()-Methode des Fahrzeugs und Ausgabe in der Konsole
-            Console.WriteLine(fz1.BeschreibeMich());
+            ////Deklaration einer Fahrzeug-Variablen und Initialisierung mittels einer Fahrzeug-Instanz
+            //Fahrzeug fz1 = new Fahrzeug("Mercedes", 190, 23000);
+            ////Ausführen der BeschreibeMich()-Methode des Fahrzeugs und Ausgabe in der Konsole
+            //Console.WriteLine(fz1.BeschreibeMich());
 
-            //Diverse Methodenausführungen
-            fz1.StarteMotor();
-            fz1.Beschleunige(120);
-            Console.WriteLine(fz1.BeschreibeMich());
+            ////Diverse Methodenausführungen
+            //fz1.StarteMotor();
+            //fz1.Beschleunige(120);
+            //Console.WriteLine(fz1.BeschreibeMich());
 
-            fz1.Beschleunige(300);
-            Console.WriteLine(fz1.BeschreibeMich());
+            //fz1.Beschleunige(300);
+            //Console.WriteLine(fz1.BeschreibeMich());
 
-            fz1.StoppeMotor();
-            Console.WriteLine(fz1.BeschreibeMich());
+            //fz1.StoppeMotor();
+            //Console.WriteLine(fz1.BeschreibeMich());
 
             #endregion
 
+            PKW pkw1 = new PKW("BMW", 220, 29000, 5);
+
+            Console.WriteLine(pkw1.BeschreibeMich());
+
+            pkw1.Hupen();
+
+            Console.WriteLine(pkw1);
+
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+            pkw1 = new PKW("BMW", 220, 29000, 5);
+
+            Console.WriteLine("Anzahl der erstellten Fahrzeuge: " + Fahrzeug.AnzahlFahrzeuge);
         }
     }
 }

@@ -3,8 +3,10 @@
 namespace Fahrzeugpark
 {
     //KLASSEN sind Vorlagen für OOP-Objekte. Hier wird das Aussehen, das Verhalten und der Startzustand für Objekte dieses Typs definiert.
-    public class Fahrzeug
+    public abstract class Fahrzeug
     {
+        public static int AnzahlFahrzeuge { get; set; } = 0;
+
         #region Felder und Eigenschaften
         //FELDER (Membervariablen) sind die Variablen einzelner Objekte, welche die Zustände dieser Objekte definieren
         private int maxGeschwindigkeit;
@@ -41,6 +43,8 @@ namespace Fahrzeugpark
             this.Preis = preis;
             this.AktGeschwindigkeit = 0;
             this.MotorLäuft = false;
+
+            AnzahlFahrzeuge++;
         }
 
         //Es können mehrere Konstruktoren definiert werden, welche unterschiedliche Übergabeparameter haben (Überladung). Ein Konstruktor, der keine
@@ -85,13 +89,25 @@ namespace Fahrzeugpark
             this.AktGeschwindigkeit = 0;
         }
 
-        public string BeschreibeMich()
+        public virtual string BeschreibeMich()
         {
             if (this.MotorLäuft)
                 return $"{this.Name} kostet {this.Preis}€ und fährt momentan mit {this.AktGeschwindigkeit} von maximal {this.MaxGeschwindigkeit}km/h.";
             else
-                return $"{this.Name} kostet {this.Preis}€ und könnte maximal {this.AktGeschwindigkeit}km/h fahren.";
-        }        
+                return $"{this.Name} kostet {this.Preis}€ und könnte maximal {this.MaxGeschwindigkeit}km/h fahren.";
+        }
+
+        public abstract void Hupen();
+
+        public override string ToString()
+        {
+            return this.BeschreibeMich();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return this.Name.Equals(((PKW)obj).Name);
+        }
         #endregion
     }
 }
