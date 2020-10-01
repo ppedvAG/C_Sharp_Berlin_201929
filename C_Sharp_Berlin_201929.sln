@@ -13,17 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02.2_Zufallszahlenrate
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02_Lotto", "Lotto\Lab02_Lotto.csproj", "{1D76A08D-CA41-484B-A345-1AE8BE430F69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03.1_Enumeratoren", "Enumeratoren\Modul03.1_Enumeratoren.csproj", "{CE08175B-1131-4839-AD29-3432C32782AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03.1_Enumeratoren", "Enumeratoren\Modul03.1_Enumeratoren.csproj", "{CE08175B-1131-4839-AD29-3432C32782AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03.2_Funktionen", "Funktionen\Modul03.2_Funktionen.csproj", "{297F792F-B7A2-4F22-8DEA-CD2834C35B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03.2_Funktionen", "Funktionen\Modul03.2_Funktionen.csproj", "{297F792F-B7A2-4F22-8DEA-CD2834C35B09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Taschenrechner", "Taschenrechner\Lab03_Taschenrechner.csproj", "{038F4340-764D-4634-B168-C6CF53695EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab03_Taschenrechner", "Taschenrechner\Lab03_Taschenrechner.csproj", "{038F4340-764D-4634-B168-C6CF53695EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04.1_Fahrzeugpark", "Fahrzeugpark\Modul04.1_Fahrzeugpark.csproj", "{34636BC1-4289-4423-A801-C0B62727C6C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04.1_Fahrzeugpark", "Fahrzeugpark\Modul04.1_Fahrzeugpark.csproj", "{34636BC1-4289-4423-A801-C0B62727C6C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04.2_TesteFahrzeugpark", "TesteFahrzeugpark\Modul04.2_TesteFahrzeugpark.csproj", "{3DB2C3B0-D9C1-467E-9211-860BDE0476D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04.2_TesteFahrzeugpark", "TesteFahrzeugpark\Modul04.2_TesteFahrzeugpark.csproj", "{3DB2C3B0-D9C1-467E-9211-860BDE0476D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructVsClass", "StructVsClass\StructVsClass.csproj", "{DB9D4C78-A36C-42A1-BAFD-B9D74A861F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructVsClass", "StructVsClass\StructVsClass.csproj", "{DB9D4C78-A36C-42A1-BAFD-B9D74A861F92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WdhPolymorphismus", "WdhPolymorphismus\WdhPolymorphismus.csproj", "{26376D20-DDD7-4972-B8E4-CF22DD578BBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{DB9D4C78-A36C-42A1-BAFD-B9D74A861F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB9D4C78-A36C-42A1-BAFD-B9D74A861F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB9D4C78-A36C-42A1-BAFD-B9D74A861F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26376D20-DDD7-4972-B8E4-CF22DD578BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26376D20-DDD7-4972-B8E4-CF22DD578BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26376D20-DDD7-4972-B8E4-CF22DD578BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26376D20-DDD7-4972-B8E4-CF22DD578BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
