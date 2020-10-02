@@ -3,6 +3,7 @@
 namespace Fahrzeugpark
 {
     //KLASSEN sind Vorlagen für OOP-Objekte. Hier wird das Aussehen, das Verhalten und der Startzustand für Objekte dieses Typs definiert.
+    //Von einer als ABSTRACT gesetzten Klasse können keine Objekte instanziiert werden. Sie ist rein zur Vererbung gedacht.
     public abstract class Fahrzeug
     {
         #region Statische Member
@@ -12,6 +13,18 @@ namespace Fahrzeugpark
         public static string ZeigeAnzahlFahrzeuge()
         {
             return "Es wurden " + AnzahlFahrzeuge + " Fahrzeuge produziert.";
+        }
+
+        //Mittels des OPERATOR-Stichworts können für einzelne Klassen Operatoren definiert werden
+        //(Für Verwendung siehe TesteFahrzeugpark)
+        public static bool operator ==(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            return fz1.Equals(fz2);
+        }
+
+        public static bool operator !=(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            return !fz1.Equals(fz2);
         }
         #endregion
 
@@ -117,10 +130,6 @@ namespace Fahrzeugpark
             return this.BeschreibeMich();
         }
 
-        //public override bool Equals(object obj)
-        //{
-        //    return this.Name.Equals(((PKW)obj).Name);
-        //}
         #endregion
     }
 }

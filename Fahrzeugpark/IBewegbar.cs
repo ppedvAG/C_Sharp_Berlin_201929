@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Fahrzeugpark
 {
+    //vgl. IBeladbar
     public interface IBewegbar
     {
         public int AnzahlRäder { get; set; }
