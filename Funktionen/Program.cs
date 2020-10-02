@@ -79,10 +79,10 @@ namespace Funktionen
             }
 
             //Gegenbeispiel: Parse mit Prüfung (ohne TryParse)
-            if (eingabe.All(x => char.IsDigit(x)))
-            {
-                Console.WriteLine(int.Parse(eingabe) * 2);
-            }
+            //if (eingabe.All(x => char.IsDigit(x)))
+            //{
+            //    Console.WriteLine(int.Parse(eingabe) * 2);
+            //}
 
             //Vorzeitiges Beenden der Konsolenapplikation
             Environment.Exit(0);

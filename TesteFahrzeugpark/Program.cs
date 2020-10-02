@@ -215,7 +215,7 @@ namespace TesteFahrzeugpark
             Stack<Fahrzeug> fzStack = new Stack<Fahrzeug>();
             Dictionary<Fahrzeug, Fahrzeug> fzDict = new Dictionary<Fahrzeug, Fahrzeug>();
             //Deklaration und Initialisierung einer Variablen zur Bestimmung der Anzahl der Durchläufe 
-            int AnzahlFZs = 10;
+            int AnzahlFZs = 10000;
 
             //Schleife zur zufälligen Befüllung von Queue und Stack
             for (int i = 0; i < AnzahlFZs; i++)
@@ -257,6 +257,8 @@ namespace TesteFahrzeugpark
                     fzStack.Pop();
                 }
             }
+
+            GC.Collect();
 
             //Programmpause
             Console.ReadKey();
